@@ -8,3 +8,11 @@ Homepage: https://github.com/markokr/pghashlib
 Vcs-Git: git://github.com/markokr/pghashlib.git
 Vcs-Browser: https://github.com/markokr/pghashlib
 
+Package: postgresql-hashlib-12
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, postgresql-12
+Breaks: postgresql-12-hashlib
+Replaces: postgresql-12-hashlib
+Description: Stable hash functions for PostgreSQL
+ Various text hashing functions.
+
